@@ -6,9 +6,9 @@ This is an e-commerce site for Encore Furnishings, a furniture restoration, pain
 
 ## Features:
 <ol>
-<li> User can view service offerings</li>
-<li> User can view details about offerings</li>
-<li> User can purchase offerings</li>
+<li> User can view services</li>
+<li> User can view products</li>
+<li> User can purchase products</li>
 <li> User can view business details</li>
 <li> User can view business blog</li>
 <li> User can contact business</li>
@@ -24,7 +24,7 @@ This project is currently in the planning stages.
 
 ##Changelog:
 
-2013-11-14: Project started.
+2013-11-14: Project started
 
 ##Known Bugs:
 
