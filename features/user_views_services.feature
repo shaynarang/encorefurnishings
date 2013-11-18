@@ -1,5 +1,5 @@
 Feature: User Views Services
-  In order to learn more about the company
+  In order to learn more about the company offerings
   As a potential purchaser
   I want to view services
 
