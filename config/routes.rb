@@ -4,6 +4,11 @@ Encorefurnishings::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'pages#home'
+  resources :pages, :only => [:home, :about, :services, :contact]
+  get '/home', to:'pages#home'
+  get '/about', to:'pages#about'
+  get '/services', to: 'pages#services'
+  get '/contact', to: 'pages#contact'
   resources :products
 
   # Example of regular route:
