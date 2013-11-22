@@ -1,4 +1,4 @@
-Feature: User Views Products
+Feature: User Browses Products
   In order to view company products
   As a potential purchaser
   I want to browse products
