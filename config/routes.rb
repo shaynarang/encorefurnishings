@@ -10,7 +10,11 @@ Encorefurnishings::Application.routes.draw do
   resources :services
   resources :products
   resources :contact, :only => [:index]
-  
+  match '/about' => 'pages#about', via: :get
+  match '/services' => 'pages#services', via: :get
+  match '/contact' => 'pages#contact', via: :get
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
