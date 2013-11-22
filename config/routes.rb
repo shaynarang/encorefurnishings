@@ -3,17 +3,8 @@ Encorefurnishings::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'home#index'
-
-
-  resources :about, :only => [:index]
-  resources :services
+  root 'pages#home'
   resources :products
-  resources :contact, :only => [:index]
-  match '/about' => 'pages#about', via: :get
-  match '/services' => 'pages#services', via: :get
-  match '/contact' => 'pages#contact', via: :get
-
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
