@@ -10,5 +10,9 @@
  *
  *= require_self
  *= require foundation_and_overrides
- *= require_tree .
+ *= require home
+ *= require about
+ *= require services
+ *= require products
+ *= require contact
  */
