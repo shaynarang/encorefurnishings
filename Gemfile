@@ -9,8 +9,11 @@ gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
-# Use Zurb Foundation
+# Use Zurb Foundation for styling
 gem 'zurb-foundation'
+
+# Use Active Admin for product management
+gem 'activeadmin', github: 'gregbell/active_admin'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
