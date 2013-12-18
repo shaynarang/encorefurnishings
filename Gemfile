@@ -9,6 +9,9 @@ gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
+# Use HAML
+gem 'haml-rails'
+
 # Use Zurb Foundation for styling
 gem 'zurb-foundation'
 
