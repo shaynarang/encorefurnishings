@@ -4,4 +4,18 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
 
+  def create
+    @product = Product.new(product_params)
+  end
+ 
+  def update
+    @product = Product.find(params[:id])
+    @product.update_attributes!(product_params)
+  end
+ 
+  private
+    def product_params
+      params.require(:product).permit(:title, :description)
+    end 
+
 end

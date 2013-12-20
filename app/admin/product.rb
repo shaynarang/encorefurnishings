@@ -1,4 +1,6 @@
 ActiveAdmin.register Product do
+  permit_params :title, :description
+
   index do
     column :id
     column :title
