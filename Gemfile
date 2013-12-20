@@ -49,6 +49,7 @@ group :test do
   gem 'rspec-rails'
   gem 'database_cleaner'
   gem 'capybara'
+  gem 'fabrication'
 end
 
 # Use ActiveModel has_secure_password
