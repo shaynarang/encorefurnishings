@@ -1,4 +1,3 @@
-@wip
 Feature: Admin creates product
 
   As an admin 
