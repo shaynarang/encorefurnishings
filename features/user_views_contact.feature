@@ -4,6 +4,6 @@ Feature: User Views Contact
   I want to view the contact page
 
   Scenario: Happy Path
-    When I go to the homepage
+    When I go to the home page
     And I click on "Contact"
     Then I should see "For more information, contact me at (615) 988-0189 or encorefurnishingsnashville@gmail.com."

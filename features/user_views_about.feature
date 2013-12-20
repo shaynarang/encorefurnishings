@@ -4,6 +4,6 @@ Feature: User Views About
   I want to view the about page
 
   Scenario: Happy Path
-    When I go to the homepage
+    When I go to the home page
     And I click on "About"
     Then I should see "Encore Furnishings is a furniture restoration, painting and staining service in Nashville, TN."

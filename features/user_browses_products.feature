@@ -4,13 +4,13 @@ Feature: User Browses Products
   I want to browse products
 
   Scenario: Happy Path
-    When I go to the homepage
+    When I go to the home page
     And I click on "Products"
     Then I should see "Products"
 
   Scenario:
     Given I have products titled "Table", "Chairs"
-    When I go to the homepage
+    When I go to the home page
     And I click on "Products"
     Then I should see "Products"
     And I should see "Table"
