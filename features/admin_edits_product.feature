@@ -1,4 +1,3 @@
-@wip
 Feature: Admin edits product
 
   As an admin 
