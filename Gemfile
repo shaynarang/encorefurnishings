@@ -13,6 +13,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'money-rails'
+gem 'carrierwave'
+gem 'mini_magick'
 
 group :doc do
   gem 'sdoc', require: false

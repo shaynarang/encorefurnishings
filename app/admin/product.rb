@@ -1,5 +1,5 @@
 ActiveAdmin.register Product do
-  permit_params :title, :description, :price_cents, :price_currency
+  permit_params :title, :description, :price_cents, :price_currency, :image, :image_delete
 
   index do
     column :id
@@ -18,6 +18,9 @@ ActiveAdmin.register Product do
       row :price do |product|
         number_to_currency product.price
       end
+      row :image do
+        image_tag product.image.url(:thumb).to_s
+      end
     end
   end
 
@@ -27,6 +30,10 @@ ActiveAdmin.register Product do
       f.input :description
       f.input :price_cents
       f.input :price_currency
+      f.input :image, :as => :file, :hint => f.template.image_tag(f.object.image.url(:thumb)), :id => "thumbnail"
+      if f.object.image?
+        f.input :image_delete, :as => :boolean, :required => false, :label => 'Remove Image'
+      end
     end
     f.actions
   end
