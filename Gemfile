@@ -19,6 +19,10 @@ gem 'omniauth'
 gem 'omniauth-facebook', '1.4.0'
 gem 'figaro'
 
+group :production do
+  gem 'rails_12factor'
+end
+
 group :doc do
   gem 'sdoc', require: false
 end
