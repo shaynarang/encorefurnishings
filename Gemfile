@@ -15,15 +15,19 @@ gem 'jbuilder', '~> 1.2'
 gem 'money-rails'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'omniauth'
+gem 'omniauth-facebook', '1.4.0'
+gem 'figaro'
 
 group :doc do
   gem 'sdoc', require: false
 end
 
 group :test do
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', require: false
   gem 'rspec-rails'
   gem 'database_cleaner'
   gem 'capybara'
   gem 'fabrication'
+  gem 'selenium-webdriver'
 end

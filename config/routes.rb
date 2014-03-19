@@ -13,6 +13,14 @@ Encorefurnishings::Application.routes.draw do
   get '/contact', to: 'pages#contact'
   resources :products
 
+  match 'auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
+  get '/auth/failure' do
+    flash[:notice] = params[:message]
+    redirect '/'
+  end
+  match 'signout', to: 'sessions#destroy', as: 'signout', via: [:get, :post]
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
