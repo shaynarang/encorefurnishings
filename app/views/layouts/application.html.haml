@@ -29,6 +29,7 @@
 
     #user-widget
       - if current_user
+        = image_tag(avatar_url)
         Welcome
         = succeed "!" do
           %strong= current_user.name

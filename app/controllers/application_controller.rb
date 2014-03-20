@@ -7,7 +7,12 @@ class ApplicationController < ActionController::Base
 
     def current_user
       @current_user ||= User.find(session[:user_id]) if session[:user_id]
+      rescue ActiveRecord::RecordNotFound
     end
 
-    helper_method :current_user
+    def avatar_url
+      "https://graph.facebook.com/#{current_user.uid}/picture?type=square"
+    end
+
+    helper_method :current_user, :avatar_url
 end

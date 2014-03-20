@@ -20,6 +20,7 @@ gem 'unf'
 gem 'omniauth'
 gem 'omniauth-facebook', '1.4.0'
 gem 'figaro'
+gem 'koala'
 
 group :production do
   gem 'rails_12factor'
