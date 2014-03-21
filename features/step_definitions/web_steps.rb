@@ -28,7 +28,7 @@ Then(/^I should see the image "(.*?)"$/) do |image|
 end
 
 Then(/^I should find the image "(.*?)"$/) do |image|
-  page.find "img[contains(@src,'#{image}')]"
+  page.find "img[contains(@alt,'#{image}')]"
 end
 
 Then(/^I should not see the image "(.*?)"$/) do |image|

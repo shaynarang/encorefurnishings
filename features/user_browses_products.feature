@@ -15,6 +15,6 @@ Feature: User Browses Products
     When I go to the home page
     And I click "Products"
     Then I should see "Table"
-    And I should see "You will go crazy for this table!"
+    And I should not see "You will go crazy for this table!"
     And I should see "59.99"
     And I should find the image "test1"

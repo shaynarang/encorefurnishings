@@ -1,7 +1,6 @@
 %h1 Products
 - for product in @products
-  = link_to image_tag(product.image.url(:thumb).to_s), product_path(product.id), :id => "product_#{product.id}_image"
+  = link_to image_tag(product.image.url(:thumb).to_s), product_path(product.id), :id => "#{product.title} thumb"
   %p= product.title
-  %p= product.description
   %p= product.price
 

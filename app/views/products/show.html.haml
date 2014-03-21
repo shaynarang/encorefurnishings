@@ -1,0 +1,5 @@
+%h1= @product.title
+= image_tag(@product.image.url(:medium).to_s, :id => "#{@product.title} medium")
+%p= @product.description
+%p= @product.price
+
