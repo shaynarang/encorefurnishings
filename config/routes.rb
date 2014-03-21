@@ -14,10 +14,7 @@ Encorefurnishings::Application.routes.draw do
   resources :products
 
   match 'auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
-  get '/auth/failure' do
-    flash[:notice] = params[:message]
-    redirect '/'
-  end
+  match 'auth/failure', to: redirect { |p, req| req.flash[:alert] = "Could not authenticate you from Facebook. Please try again."; '/' }, via: [:get, :post]
   match 'signout', to: 'sessions#destroy', as: 'signout', via: [:get, :post]
 
 

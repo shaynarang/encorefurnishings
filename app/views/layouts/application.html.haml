@@ -27,6 +27,10 @@
   %body
     %h1= link_to "Encore Furnishings", home_path
 
+    #flash_messages
+      - flash.each do |name, msg|
+        = content_tag :div, msg, class: name
+
     #user-widget
       - if current_user
         = image_tag(avatar_url)
