@@ -1,4 +1,3 @@
-@wip
 Feature: User signs in with Facebook
   In order to have a personalized experience
   As a member of Facebook
@@ -12,6 +11,7 @@ Feature: User signs in with Facebook
     Scenario: Happy Path
       Then I should see "Welcome Test User!"
       And I should see "Sign out"
+      And I should see the image "https://graph.facebook.com/123545/picture?type=square"
 
     @facebook_auth_fail
     Scenario: Invalid credentials
