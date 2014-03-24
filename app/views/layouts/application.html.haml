@@ -18,11 +18,7 @@
     = javascript_include_tag "vendor/custom.modernizr"
     = csrf_meta_tags
 
-    :javascript
-      if (window.location.hash && window.location.hash == '#_=_') {
-        window.location.hash = '';
-        history.pushState('', document.title, window.location.pathname);
-      }
+    = javascript_include_tag "application"
 
   %body
     %h1= link_to "Encore Furnishings", home_path
@@ -31,16 +27,7 @@
       - flash.each do |name, msg|
         = content_tag :div, msg, class: name
 
-    #user-widget
-      - if current_user
-        = image_tag(avatar_url)
-        Welcome
-        = succeed "!" do
-          %strong= current_user.name
-        = link_to "Sign out", signout_path, id: "sign_out"
-      - else
-        = link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in"
+    = render "layouts/facebook"
 
     %hr
     = yield
-    = javascript_include_tag "application"

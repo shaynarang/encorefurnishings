@@ -1,0 +1,10 @@
+- if current_user
+  = image_tag(avatar_url)
+  Welcome
+  = succeed "!" do
+    %strong= current_user.name
+  = link_to "Sign out", signout_path, id: "sign_out"
+  %p
+    .fb-like{"data-action" => "like", "data-href" => "https://www.facebook.com/encorefurnishingsnashville", "data-layout" => "standard", "data-share" => "true", "data-show-faces" => "false"}
+- else
+  = link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in"

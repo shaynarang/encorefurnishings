@@ -42,3 +42,11 @@ end
 Then(/^I should see the file input "(.*?)"$/) do |field_id|
   page.should have_css("input[type='file'][id='#{field_id}']")
 end
+
+Then(/^I should see the section "(.*?)"$/) do |section_class|
+  page.should have_selector "div.#{section_class}"
+end
+
+Then(/^I should not see the section "(.*?)"$/) do |section_class|
+  page.should have_no_selector "div.#{section_class}"
+end
