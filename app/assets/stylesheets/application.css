@@ -10,9 +10,6 @@
  *
  *= require_self
  *= require foundation_and_overrides
- *= require home
- *= require about
- *= require services
- *= require products
- *= require contact
+ *= require facebook
+ *= require style
  */

@@ -9,7 +9,7 @@ Feature: User signs in with Facebook
 
     @facebook_auth
     Scenario: Happy Path
-      Then I should see "Welcome Test User!"
+      Then I should see "Hi Test User!"
       And I should see "Sign out"
       And I should see the image "https://graph.facebook.com/123545/picture?type=square"
       And I should see the section "fb-like"

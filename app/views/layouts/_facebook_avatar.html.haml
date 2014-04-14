@@ -1,0 +1,10 @@
+- if current_user
+  #facebook-avatar
+    = image_tag(avatar_url)
+    Hi
+    = succeed "!" do
+      %strong= current_user.name
+    %br
+    = link_to "Sign out", signout_path, id: "sign_out"
+- else
+  = link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in"

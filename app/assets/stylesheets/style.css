@@ -1,0 +1,70 @@
+body {
+  width: 80%;
+  margin: auto;
+}
+
+.title_row {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  margin: 2% 0 0 0;
+}
+
+.main_title {
+  padding: 0;
+}
+
+.navigation_row {
+  margin: 0;
+  float: left;
+  border-bottom: 1px solid black;
+}
+
+.facebook_avatar {
+  margin-top: 2%;
+  text-align: right;
+  margin-bottom: 2%;
+}
+
+#facebook-avatar img {
+  border-radius: 5px;
+}
+
+.facebook_actions {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation_menu {
+  text-align: right;
+  padding: 0;
+}
+
+nav ul {
+  margin-top: 8%;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  padding: 3%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.home_images {
+  border-bottom: 1px solid black;
+}
+
+.home_images img {
+  border-radius: 21px;
+  margin: 2% 0 2% 0;
+  width: 32%;
+  padding: 1%;
+}
+
+#sign_out {
+  padding: 4px;
+  border: 1px solid black;
+  border-radius: 5px;
+}

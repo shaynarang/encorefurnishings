@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
 
   def home
+    @products = Product.order("RANDOM()").limit(3)
   end
 
   def about

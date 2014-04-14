@@ -21,13 +21,24 @@
     = javascript_include_tag "application"
 
   %body
-    %h1= link_to "Encore Furnishings", home_path
+
+    %div#fb-root
+
+    .row.title_row
+      .main_title.large-6.columns.small-12.columns
+        %h1= link_to "Encore Furnishings", home_path
+      .facebook_avatar.large-6.columns.small-12.columns
+        = render "layouts/facebook_avatar"
 
     #flash_messages
       - flash.each do |name, msg|
         = content_tag :div, msg, class: name
 
-    = render "layouts/facebook"
+    .row.navigation_row
+      .facebook_actions.large-6.columns.small-12.columns
+        - if current_user
+          = render "layouts/facebook_actions"
+      .navigation_menu.large-6.columns.small-12.columns
+        = render "layouts/navigation_menu"
 
-    %hr
     = yield
