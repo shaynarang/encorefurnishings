@@ -3,8 +3,8 @@
 body {
   width: 80%;
   margin: auto;
-  padding-top: 1%;
-  background: #eeb7cd;
+  padding-top: 2%;
+  background: #d9f4b7;
   font-family: "Comfortaa";
 }
 
@@ -147,12 +147,6 @@ nav ul li a {
   margin: 0 20% 2% 20%;
 }
 
-.content {
-  border-radius: 21px;
-  background-color: #d9f4b7;
-  padding: 2% 0;
-}
-
 .content h1 {
   font-family: "Comfortaa";
   font-weight: bold;
@@ -163,7 +157,7 @@ nav ul li a {
 .footer {
   padding: 2%;
   margin: 2% 0;
-  background-color: #d1b2a2;
+  background-color: #9a84a8;
   text-align: center;
   letter-spacing: 1.5px;
   color: white;
