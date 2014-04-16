@@ -1,3 +1,3 @@
 .home_images.large-12.columns
-  - @products.each do |product|
-    = image_tag(product.image.url(:medium).to_s, :id => "#{product.title} medium", :size => '260x180')
+  - for product in @products
+    = link_to image_tag(product.image.url(:medium).to_s), product_path(product.id), :id => "#{product.title} medium"

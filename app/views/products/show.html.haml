@@ -1,5 +1,8 @@
-%h1= @product.title
-= image_tag(@product.image.url(:medium).to_s, :id => "#{@product.title} medium")
-%p= @product.description
-%p= "$" + "#{@product.price}"
+%div.product
+  %h1= @product.title
+  = image_tag(@product.image.url(:large).to_s, :id => "#{@product.title} large")
+  %p= @product.description
+  %p= "$" + "#{@product.price}"
 
+  .products_link
+    = link_to "Back to Products", products_path

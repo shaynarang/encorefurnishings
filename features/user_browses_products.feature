@@ -14,7 +14,7 @@ Feature: User Browses Products
   Scenario: Happy Path
     When I go to the home page
     And I click "Products"
-    Then I should see "Table"
+    Then I should not see "Table"
     And I should not see "You will go crazy for this table!"
-    And I should see "59.99"
+    And I should not see "59.99"
     And I should find the image "test1"

@@ -16,7 +16,7 @@ Feature: User Views Product
       Then I should be on the products page
       And I should find the image "test1"
       And I should not see "These chairs are good!"
-      When I click "Old Chairs thumb"
+      When I click "Old Chairs medium"
       Then I should see "Old Chairs"
       And I should find the image "test1"
       And I should see "39.99"
