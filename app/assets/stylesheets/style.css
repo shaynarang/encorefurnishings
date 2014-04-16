@@ -154,6 +154,21 @@ nav ul li a {
   color: #b998cd;
 }
 
+.contact_form {
+  width: 60%;
+  margin: 0 20%;
+}
+
+.contact_form_submit_button {
+  font-family: "Comfortaa" !important;
+  padding: 2% !important;
+  border: 1px solid #89b453;
+  background-color: #89b453;
+  border-radius: 5px;
+  color: #d4f2af;
+  font-size: 95%;
+}
+
 .footer {
   padding: 2%;
   margin: 2% 0;
@@ -162,4 +177,21 @@ nav ul li a {
   letter-spacing: 1.5px;
   color: white;
   border-radius: 21px;
+}
+
+.notice {
+  width: 60%;
+  margin: 0 20% 2% 20%;
+  text-align: center;
+  padding: 2%;
+  border: 2px solid #ae5076;;
+  border-radius: 5px;
+}
+
+.error_messages ul {
+  padding: 2%;
+  border: 2px solid #ae5076;;
+  border-radius: 5px;
+  list-style-type: none;
+  text-align: center;
 }

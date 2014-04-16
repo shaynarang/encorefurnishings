@@ -21,6 +21,7 @@ gem 'omniauth'
 gem 'omniauth-facebook', '1.4.0'
 gem 'figaro'
 gem 'koala'
+gem 'active_attr'
 
 group :production do
   gem 'rails_12factor'

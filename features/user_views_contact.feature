@@ -3,7 +3,28 @@ Feature: User Views Contact
   As a potential or existing client
   I want to view the contact page
 
-  Scenario: Happy Path
+  Background:
     When I go to the home page
     And I click on "Contact"
-    Then I should see "For more information, contact me at (615) 988-0189 or encorefurnishingsnashville@gmail.com."
+
+  Scenario: Happy Path
+    When I fill in "Steve" for "Name"
+    And I fill in "steve@example.com" for "Email"
+    And I fill in "Howdy!" for "Message"
+    And I press "Send"
+    Then I should see "Thank you for contacting me. I will be in touch."
+
+  Scenario: Blank Name
+    And I fill in "steve@example.com" for "Email"
+    And I fill in "Howdy!" for "Message"
+    And I press "Send"
+    Then I should see "Something went wrong. Please try again."
+    And I should see "Name can't be blank"
+
+  Scenario: Invalid Email
+    And I fill in "Steve" for "Name"
+    And I fill in "nonsense" for "Email"
+    And I fill in "Howdy!" for "Message"
+    And I press "Send"
+    Then I should see "Something went wrong. Please try again."
+    And I should see "Email is invalid"
