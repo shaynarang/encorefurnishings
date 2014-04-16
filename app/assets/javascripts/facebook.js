@@ -3,6 +3,12 @@ window.fbAsyncInit = function() {
     appId: '<%= ENV["FACEBOOK_APP_ID"] %>',
     cookie: true
   });
+  $('a#fb-invite').click(function() {
+    FB.ui({ 
+      method: 'apprequests',
+      message: 'Check out Encore Furnishings, a furniture restoration, painting and staining service in Nashville, TN.'
+    });
+  });
   $('#sign_in').click(function(e) {
     e.preventDefault();
     return FB.login(function(response) {
