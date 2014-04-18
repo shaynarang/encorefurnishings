@@ -35,6 +35,7 @@ Encorefurnishings::Application.configure do
 
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
+    domain: 'gmail.com',
     port: 587,
     authentication: "plain",
     enable_starttls_auto: true,
