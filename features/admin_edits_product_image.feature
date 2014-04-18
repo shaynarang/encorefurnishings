@@ -1,14 +1,13 @@
 Feature: Admin edits product image
-
-  As an admin 
+  As an admin
   In order to update a product image
   I want to edit a product image
 
   Background:
     Given the following admin_user:
-      | email    | admin@example.com |  
+      | email    | admin@example.com |
       | password | password          |
-      
+
   Scenario: Happy path
     Given I am signed in as that admin
     When I go to the admin dashboard page

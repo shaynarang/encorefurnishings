@@ -10,8 +10,4 @@ Encorefurnishings::Application.routes.draw do
   get '/contact', to: 'messages#new'
   resources :products, :only => [:index, :show]
   resources :messages, :only => [:new, :create]
-
-  match 'auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
-  match 'auth/failure', to: redirect { |p, req| req.flash[:alert] = "Could not authenticate you from Facebook. Please try again."; '/' }, via: [:get, :post]
-  match 'signout', to: 'sessions#destroy', as: 'signout', via: [:get, :post]
 end

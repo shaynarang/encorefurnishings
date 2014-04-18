@@ -1,17 +1,16 @@
 Feature: Admin edits product
-
-  As an admin 
-  In order to update a product 
+  As an admin
+  In order to update a product
   I want to update the listing for that product
 
   Background:
     Given the following admin_user:
-      | email    | admin@example.com |  
-      | password | password          |  
+      | email    | admin@example.com |
+      | password | password          |
     Given the following product:
-      | title       | Old Chairs             |  
-      | description | These chairs are good! |  
-      | price       | 3999                   |  
+      | title       | Old Chairs             |
+      | description | These chairs are good! |
+      | price       | 3999                   |
 
   Scenario: Happy path
     Given I am signed in as that admin

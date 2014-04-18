@@ -39,29 +39,9 @@ body p {
   margin-bottom: 2%;
 }
 
-.facebook_avatar {
-  padding-top: 2%;
-  text-align: right;
-}
-
-#sign_in {
-  color: #ffd1b9;
-}
-
-#facebook-avatar img {
-  border-radius: 5px;
-}
-
-#facebook-avatar a {
-  color: #7a4899;
-}
-
 .facebook_actions {
-  padding: 0;
-}
-
-.facebook_actions a {
-  color: #7a4899;
+  margin: 0;
+  padding: 4% 0 0 0;
 }
 
 .navigation_menu {
@@ -167,6 +147,19 @@ nav ul li a {
   border-radius: 5px;
   color: #d4f2af;
   font-size: 95%;
+}
+
+.facebook_actions iframe {
+  transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform-origin: top left;
+  -ms-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -webkit-transform-origin: top left;
 }
 
 .footer {

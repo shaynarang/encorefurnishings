@@ -1,14 +1,13 @@
 Feature: Admin uploads product image
-
   As an admin 
   In order to display a product 
   I want to upload a product image
 
   Background:
     Given the following admin_user:
-      | email    | admin@example.com |  
-      | password | password          |  
- 
+      | email    | admin@example.com |
+      | password | password          |
+
   Scenario: Happy path
     Given I am signed in as that admin
     When I go to the admin dashboard page

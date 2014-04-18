@@ -1,5 +1,4 @@
 Feature: Admin creates product
-
   As an admin 
   In order to sell a product 
   I want to create a listing for that product

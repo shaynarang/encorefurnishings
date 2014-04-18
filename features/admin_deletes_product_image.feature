@@ -1,18 +1,17 @@
 Feature: Admin deletes product image
-
-  As an admin 
+  As an admin
   In order to render a product image obsolete
-  I want to delete that product image                       |  
+  I want to delete that product image
 
   Background:
     Given the following admin_user:
-      | email    | admin@example.com |  
+      | email    | admin@example.com |
       | password | password          |
     Given the following product:
-      | title       | Chairs                              |  
-      | description | You will go crazy for these chairs! |  
-      | price       | 5999                                |  
-      | image       | test1.png                           |  
+      | title       | Chairs                              |
+      | description | You will go crazy for these chairs! |
+      | price       | 5999                                |
+      | image       | test1.png                           |
 
   Scenario: Happy path
     Given I am signed in as that admin

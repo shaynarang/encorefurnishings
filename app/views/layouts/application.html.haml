@@ -29,15 +29,12 @@
         = content_tag :div, msg, class: name
 
     .row.title_row
-      .main_title.large-6.columns.small-12.columns
+      .main_title.large-12.columns.small-12.columns
         %h1= link_to "Encore Furnishings", home_path
-      .facebook_avatar.large-5.columns.small-12.columns
-        = render "layouts/facebook_avatar"
 
     .row.navigation_row
       .facebook_actions.large-5.columns.small-12.columns
-        - if current_user
-          = render "layouts/facebook_actions"
+        = render "layouts/facebook_actions"
       .navigation_menu.large-6.columns.small-12.columns
         = render "layouts/navigation_menu"
 
