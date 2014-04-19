@@ -8,7 +8,7 @@ Feature: User Browses Products
       | title       | Table                             |
       | description | You will go crazy for this table! |
       | price_cents | 5999                              |
-      | image       | test1.png                         |
+      | image       | table.png                         |
 
   Scenario: Happy Path
     When I go to the home page
@@ -16,4 +16,4 @@ Feature: User Browses Products
     Then I should not see "Table"
     And I should not see "You will go crazy for this table!"
     And I should not see "59.99"
-    And I should find the image "test1"
+    And I should find the image "table"

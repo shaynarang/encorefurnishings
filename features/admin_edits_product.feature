@@ -18,11 +18,9 @@ Feature: Admin edits product
     When I press "Products"
     Then I should see "Chairs"
     When I click "Edit"
-    Then I should see "Title"
-    And I should see "Description"
-    When I fill in "New Chairs" for "Title"
+    And I fill in "New Chairs" for "Title"
     And I fill in "These chairs are excellent!" for "Description"
-    And I fill in "4999" for "Price cents"
+    And I fill in "49.99" for "Price"
     And I press "Update Product"
     Then I should see "Product was successfully updated."
     When I go to the admin products page

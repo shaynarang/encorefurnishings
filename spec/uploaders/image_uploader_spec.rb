@@ -8,7 +8,7 @@ describe ImageUploader do
     ImageUploader.enable_processing = true
     @product = Fabricator(:product)
     @uploader = ImageUploader.new(@product, :image)
-    @uploader.store!(File.open("#{Rails.root}/features/support/files/test1.png"))
+    @uploader.store!(File.open("#{Rails.root}/features/support/files/table.png"))
   end
 
   after do

@@ -2,7 +2,11 @@
   %h1= @product.title
   = image_tag(@product.image.url(:large).to_s, :id => "#{@product.title} large")
   %p= @product.description
-  %p= "$" + "#{@product.price}"
+  %p.price
+    - if @product.sold?
+      = "SOLD!"
+    - else
+      = link_to ("$" + "#{@product.price}"), contact_path
 
   .products_link
     = link_to "Back to Products", products_path

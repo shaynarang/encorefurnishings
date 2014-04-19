@@ -11,7 +11,7 @@ Feature: Admin deletes product image
       | title       | Chairs                              |
       | description | You will go crazy for these chairs! |
       | price       | 5999                                |
-      | image       | test1.png                           |
+      | image       | chairs.png                          |
 
   Scenario: Happy path
     Given I am signed in as that admin
@@ -21,14 +21,14 @@ Feature: Admin deletes product image
     When I click "Edit"
     Then I should see "Chairs"
     And I should see "You will go crazy for these chairs!"
-    When I attach "test1.png" to "product[image]"
+    When I attach "chairs.png" to "product[image]"
     And I press "Update Product"
     Then I should see "Product was successfully updated."
     When I press "Edit Product"
-    Then I should see the image "test1"
+    Then I should see the image "chairs"
     When I check "Remove Image"
     And I press "Update Product"
-    Then I should not see the image "test1"
+    Then I should not see the image "chairs"
     When I press "Edit Product"
     Then I should not see "Remove Image"
     And I should see the file input "product_image"

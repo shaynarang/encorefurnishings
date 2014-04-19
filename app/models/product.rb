@@ -5,6 +5,10 @@ class Product < ActiveRecord::Base
   mount_uploader :image, ImageUploader
 
   before_save :destroy_image?
+
+  def sold?
+    self.sold == true
+  end
   
   def image_delete
     @image_delete ||= "0"
