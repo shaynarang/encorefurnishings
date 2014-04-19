@@ -6,7 +6,7 @@
     - if @product.sold?
       = "SOLD!"
     - else
-      = link_to ("$" + "#{@product.price}"), contact_path
+      = link_to ("$" + "#{@product.price}"), contact_path(:subject => @product.title)
 
   .products_link
     = link_to "Back to Products", products_path

@@ -3,6 +3,7 @@ class Message
 
   attribute :name
   attribute :email
+  attribute :subject
   attribute :content
 
   validates_presence_of :name

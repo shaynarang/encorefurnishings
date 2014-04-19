@@ -17,8 +17,10 @@ Feature: User Views Product
       When I click "Table medium"
       Then I should see "Table"
       And I should find the image "Table medium"
-      And I should see "39.99"
       And I should see "This table is good!"
+      When I click "39.99"
+      Then I should be on the contact page
+      And the "Subject" field should contain "Table"
 
     Scenario: Sold Product
       Then I should not see "These chairs are good!"

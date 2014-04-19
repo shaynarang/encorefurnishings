@@ -11,6 +11,8 @@ def path_to(page_name)
     admin_products_path
   when /the products page/
     products_path
+  when /the contact page/
+    contact_path
   else
     raise "Unable to find #{page_name}"
   end

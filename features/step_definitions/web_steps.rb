@@ -14,6 +14,10 @@ Given /^I fill in "([^"]*)" for "([^"]*)"$/ do |value, field|
   fill_in(field, with: value)
 end
 
+Then /^the "([^\"]*)" field should contain "([^\"]*)"$/ do |field, value|
+  field_labeled(field).value.should =~ /#{value}/
+end
+
 When /^I (?:click|press) "([^"]*)"$/ do |selector|
   click_link_or_button(selector)
 end
