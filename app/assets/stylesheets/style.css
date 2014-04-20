@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Lily+Script+One|Comfortaa:700,400);
 
+.compressed {
+  display: none;
+}
+
 .top_footer {
   display: none;
 }
@@ -34,7 +38,6 @@ body p {
   font-family: "Lily Script One";
   text-decoration: underline;
   color: #d4f2af;
-  text-shadow: 0 1px 3px gray;
 }
 
 .main_title h1 a:hover {
