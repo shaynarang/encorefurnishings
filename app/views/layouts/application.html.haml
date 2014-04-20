@@ -30,13 +30,16 @@
         = content_tag :div, msg, class: name
 
     .row.title_row
-      .main_title.large-12.columns.small-12.columns
+      .main_title
         %h1= link_to "Encore Furnishings", home_path
+      .top_footer
+        %p= "(615) 988-0189"
+        %p= "encorefurnishingsnashville@gmail.com"
 
     .row.navigation_row
-      .facebook_actions.large-5.columns.small-12.columns
+      .facebook_actions.large-5.columns
         = render "layouts/facebook_actions"
-      .navigation_menu.large-6.columns.small-12.columns
+      .navigation_menu.large-6.columns
         = render "layouts/navigation_menu"
 
     .row.content

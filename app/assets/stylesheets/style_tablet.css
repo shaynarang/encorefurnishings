@@ -1,0 +1,25 @@
+@media (min-width: 721px) and (max-width: 1224px) {
+  body {
+    width: 95%;
+    padding: 5% 2.5%;
+  }
+
+  .home_images img {
+    width: 31%;
+  }
+
+  .about img, .product img, .contact_form {
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  .about p, .services p {
+    width: 90%;
+    margin: 5%;
+  }
+
+  .notice {
+    width: 100%;
+    margin: 0 0 2% 0;
+  }
+}

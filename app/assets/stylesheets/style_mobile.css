@@ -1,0 +1,97 @@
+@media (min-width: 320px) and (max-width: 720px) {
+  body {
+    width: 100%;
+    padding: 5% 0 0 0;
+  }
+
+  .title_row {
+    border-radius: 5px 5px 0 0;
+    padding: 10% 0 10% 2%;
+  }
+
+  .facebook_actions {
+    width: 50%;
+    margin: 0 25%;
+    padding-top: 10%;
+  }
+
+  .navigation_row {
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .navigation_menu {
+    margin-bottom: 10%;
+  }
+
+  nav ul li a {
+    width: 80%;
+    margin: 2% 10%;
+    padding: 2% 0;
+    float: left;
+    text-align: center;
+  }
+
+  .product {
+    width: 100%;
+    margin: 0;
+  }
+
+  .about img, .product img {
+    border-radius: 0;
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  .content {
+    padding-top: 2%;
+  }
+
+  .products img {
+    border-radius: 0;
+    width: 90%;
+    margin: 0 5%;
+    padding-top: 5%;
+  }
+
+  .home_images img {
+    display: none;
+  }
+
+  .about p, .services p {
+    width: 90%;
+    margin: 5%;
+  }
+
+  .interested {
+    width: 90%;
+    margin: 2% 5%;
+    padding-bottom: 10%;
+  }
+
+  .contact_form, .notice {
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  .notice {
+    margin: 7% 5%;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .top_footer {
+    display: inline;
+  }
+
+  .top_footer p {
+    width: 100%;
+    margin: 0;
+    font-family: "Comfortaa";
+    text-align: center;
+    font-size: 80%;
+    color: #d9f4b7;
+  }
+}
