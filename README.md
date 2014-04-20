@@ -2,31 +2,33 @@
 
 This is an e-commerce site for Encore Furnishings, a furniture restoration, painting, and staining service in Nashville, TN.
 
-## Purpose:
-
 ## Features:
 <ol>
-<li> User can view services</li>
-<li> User can view products</li>
-<li> User can purchase products</li>
-<li> User can view business details</li>
-<li> User can view business blog</li>
-<li> User can contact business</li>
+<li> User can Facebook like and share </li>
+<li> User can view About, Services, Products, Blog, and Contact pages </li>
+<li> User can contact Encore Furnishings about a particular product </li>
+<li> User can comfortably access application via tablet and mobile devices </li>
+<li> Admin can manage products </li>
 </ol>
-
-##Usage:
-
-##To Do:
 
 ##Project Status:
 
-This project is currently in the planning stages.
+As of 04/20/14, this project is fully-functional and has been deployed to encorefurnishings.herokuapp.com.
 
-##Changelog:
+## Development Overview
 
-2013-11-14: Project started
+### Tool Chain
+  * RVM
+  * Ruby 2.0.0
+  * PostgreSQL 9.3.4
 
-##Known Bugs:
+### Project Setup
+  1. Install things in the tool chain
+  2. Run `bundle`
+  3. Create config/database.yml for your particular setup (there is an example file: config/database.example.yml)
+  4. Create config/application.yml for your particular setup (there is an example file: config/application.example.yml)
+  5. Run `rake db:create:all` and `rake db:migrate` to set up your database
+  6. Run `rake` and confirm that all of the tests are passing for you
 
 ##Author:
 
@@ -34,7 +36,7 @@ Akshay 'Shay' Narang
 
 ##License:
 
-Copyright (c) 2013 Akshay 'Shay' Narang
+Copyright (c) 2014 Akshay 'Shay' Narang
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
