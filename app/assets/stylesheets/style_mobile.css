@@ -8,6 +8,10 @@
     display: inline;
   }
 
+  html, body {
+    overflow-x: hidden;
+  }
+
   body {
     width: 100%;
     padding: 10% 0 5% 0;
@@ -20,8 +24,7 @@
 
   .facebook_actions {
     width: 50%;
-    margin: 0 25%;
-    padding-top: 10%;
+    margin: 7% 25% 0 25%;
   }
 
   .navigation_row {
@@ -30,7 +33,7 @@
   }
 
   .navigation_menu {
-    margin-bottom: 10%;
+    margin: 0 0 7% 0;
   }
 
   nav ul li a {
@@ -101,5 +104,10 @@
     text-align: center;
     font-size: 80%;
     color: #d9f4b7;
+  }
+
+  .notice {
+    width: 100%;
+    margin: 0 0 10% 0;
   }
 }

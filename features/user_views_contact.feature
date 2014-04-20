@@ -18,13 +18,15 @@ Feature: User Views Contact
     And I fill in "steve@example.com" for "Email"
     And I fill in "Howdy!" for "Message"
     And I press "Send"
-    Then I should see "Something went wrong. Please try again."
-    And I should see "Name can't be blank"
+    Then I should see "Name can't be blank!"
 
   Scenario: Invalid Email
     And I fill in "Steve" for "Name"
     And I fill in "nonsense" for "Email"
     And I fill in "Howdy!" for "Message"
     And I press "Send"
-    Then I should see "Something went wrong. Please try again."
-    And I should see "Email is invalid"
+    Then I should see "Email is invalid!"
+
+  Scenario: Blank Name and Invalid Email
+    And I press "Send"
+    Then I should see "Name can't be blank and email is invalid!"

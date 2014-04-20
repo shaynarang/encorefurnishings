@@ -9,8 +9,8 @@ class MessagesController < ApplicationController
       MessageMailer.new_message(@message).deliver
       redirect_to root_url, notice: "Thank you for contacting me. I will be in touch."
     else
-      flash[:notice] = "Something went wrong. Please try again."
-      render "new"
+      error_message = @message.errors.full_messages.to_sentence.downcase.capitalize
+      redirect_to contact_path, notice: error_message + "!"
     end
   end
 end
