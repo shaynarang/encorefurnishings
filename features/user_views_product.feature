@@ -18,7 +18,8 @@ Feature: User Views Product
       Then I should see "Table"
       And I should find the image "Table medium"
       And I should see "This table is good!"
-      When I click "39.99"
+      And I should see "39.99"
+      When I click "I'm interested"
       Then I should be on the contact page
       And the "Subject" field should contain "Table"
 
@@ -27,6 +28,6 @@ Feature: User Views Product
       When I click "Chairs medium"
       Then I should see "Chairs"
       And I should find the image "Chairs medium"
-      And I should not see "49.99"
+      And I should see "49.99"
       And I should see "These chairs are good!"
       And I should see "SOLD!"
